@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>floof.cx</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta name="description" content="Hunt down mobs and strengthen your flower to become the best flower in the garden!">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="./resources/Floof_Logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./resources/Floof_Logo.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./resources/Floof_Logo.png">
+        <style>
+            html, body, canvas {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                font: bold 1em/1.5em Ubuntu, sans-serif;
+                image-rendering: pixelated;
+                background-color: black;
+            }
+            #chatInput {
+                display: none;
+                position: absolute;
+                border-radius: .5vmin;
+                border: none;
+                background-color: rgba(0, 0, 0, .5);
+                padding: .5vmin;
+                color: white;
+                font: bold 1em/1.5em Ubuntu, sans-serif;
+            }
+
+            #chatInput:focus {
+                outline: none;
+            }
+            
+        </style>
+        <script src="./bundle.js" type="module" defer></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <canvas id="canvas"></canvas>
+        <video id="trailer">
+            <source src="./resources/Floof_Trailer.mp4" type="video/mp4">
+            Your browser does not support HTML video! Please enable it so you can see the trailer.
+        </video>
+        
+        <input type="text" maxlength="128" id="chatInput" placeholder="Enter to chat; Esc to close"/>
+    </body>
+</html>
